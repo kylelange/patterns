@@ -16,6 +16,13 @@ red color: #bb0a21
 yellow green: #f7b32b
 */
 
+
+/* D3 code for fun
+
+
+*/
+
+
 body {
   font-family: 'Luminari';
 }
@@ -25,24 +32,18 @@ h2 {color: black;}
 h3 {color: black;}
 
 
-.container{
+.container {
   width: 100vw;
   height: 100vh;
+  padding: 0;
 }
 
 .box {
-  margin: 10px 10px;
-  position: relative;
+  width: 90vw;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/*.box h1,h2,h3 {
-  margin: 0;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   margin-right: -50%;
-   transform: translate(-50%, -50%)
-}*/
 
 .fixed {
   position: fixed;
@@ -67,6 +68,9 @@ h3 {color: black;}
 
 #boxb {
   background-color: #0e3b43;
+  margin-top: 95px;
+  width: 95%;
+
 }
 #box1 {
   background-color: #bb0a21;
@@ -90,17 +94,20 @@ h3 {color: black;}
   background-color: #0e3b43;
 }
 
+
+/* D3 test
+.chart {
+  font: 10px sans-serif;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: steelblue;
+  margin-top: 200px;
+}*/
+
 /*Universal Selectors****************/
-
-
-
 /*Class Selectors********************/
-
-
-
 /*Id Selectors***********************/
-
-
 
 /*Media Queries**********************/
 
@@ -108,7 +115,8 @@ h3 {color: black;}
   .flexed {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    padding: 0;
   }
   #boxb {
     margin-top: 212px;
@@ -120,7 +128,9 @@ h3 {color: black;}
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
-
+  #boxb {
+    margin-top: 114px;
+  }
 }
 
 @media screen and (min-width: 801px){
