@@ -1,3 +1,40 @@
+/* For testing only  - Leroi Dejesa */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #00f;
+}
+
+.columns, .fixed {
+  min-height: 100px;
+}
+
+
+/* End for testing */
+
+ul {
+  list-style-type: none;
+
+}
+
+.fixed {
+  display: fixed;
+  top: 0;
+}
+
+.flexed {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.flexed li {
+  margin: 1em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+
 /*Universal Selectors****************/
 
 
@@ -11,3 +48,12 @@
 
 
 /*Media Queries**********************/
+
+@media screen and (max-width: 617px){
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+}
