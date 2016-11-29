@@ -129,7 +129,7 @@ h3 {color: black;}
     font-size: 1em;
   }
   .box {
-    height: 120px;
+    height: 150px;
   }
 }
 /*tablet*/
@@ -157,5 +157,26 @@ h3 {color: black;}
     margin-top: 112px;
     margin-left: auto;
     margin-right: auto;
+    height: 150px;
+  }
+
+  #box1, #box4 {
+    margin-left: 10vw;
+  }
+
+  .box {
+    height: 250px;
+  }
+
+  .box:nth-child(n+3) {
+    width: 25vw;
+    float: left;
+    margin: 1vw;
+  }
+
+  .box:nth-child(-n+3) {
+    width: 25vw;
+    float: left;
+    margin: 1vw;
   }
 }
