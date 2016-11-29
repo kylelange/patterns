@@ -8,10 +8,12 @@
 
 _This is a PRACTICE website to work on some boilerplate responsive templates using flexbox, floats, and media queries at specific major breakpoints_
 
-## See it live [HERE](https://kylelange.github.io/responsive/).
+## See it live [HERE](https://kylelange.github.io/patterns/).
 
 ![screenshot](Screen Shot1.png)
+
 ![screenshot](Screen Shot2.png)
+
 ![screenshot](Screen Shot3.png)
 
 ## Setup/Installation Requirements
