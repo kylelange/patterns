@@ -1,0 +1,151 @@
+/* For testing only  - Leroi Dejesa */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed firebrick;
+}
+
+.columns, .fixed {
+  min-height: 100px;
+}
+/* End for testing */
+
+/*
+dark color: #070224
+mint color: #8ae9c1
+medium green: #7bae7f
+*/
+
+body {
+  font-family: 'Luminari';
+}
+
+h1 {color: white;}
+h2 {color: black;}
+h3 {color: black;}
+
+
+ul {
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.box {
+  margin: 10px 1vw;
+  position: relative;
+}
+
+.box h1,h2,h3 {
+  margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%)
+}
+
+#box1 {
+  margin-top: 110px;
+  /*display: inline-block;*/
+  height: 400px;
+  background-color: #070224;
+
+}
+#box2 {
+  /*display: inline-block;*/
+  height: 190px;
+  background-color: #7bae7f;
+}
+#box3 {
+  height: 190px;
+  background-color: #8ae9c1;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #334;
+  width: 100%;
+  font: #eee;
+}
+
+.flexed {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexed li {
+  margin: 1em;
+  font-size: 1.3em;
+  text-align: center;
+  list-style-type: none;
+}
+
+
+/*Universal Selectors****************/
+
+
+
+/*Class Selectors********************/
+
+
+
+/*Id Selectors***********************/
+
+
+
+/*Media Queries**********************/
+
+@media screen and (max-width: 600px){
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #box1 {
+    margin-top: 212px;
+  }
+  .flexed li {
+    margin: .5em;
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #box2 {
+    float: left;
+    width: 44vw;
+    height: 400px;
+  }
+
+  #box3 {
+    float: right;
+    width: 44vw;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 801px){
+  #box1 {
+    width: 59vw;
+    float: left;
+
+  }
+  #box2 {
+    width: 33vw;
+    float: right;
+    margin-top: 110px;
+    height: 190px;
+
+  }
+  #box3 {
+    width: 33vw;
+    float: right;
+    height: 190px;
+  }
+}
