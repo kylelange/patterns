@@ -2,7 +2,7 @@
 
 *:not(body):not(html) {
   box-sizing:border-box;
-  border:1px dashed firebrick;
+
 }
 
 .columns, .fixed {
@@ -71,7 +71,7 @@ h3 {color: black;}
   background-color: #0e3b43;
   margin-top: 95px;
   width: 95%;
-
+  height: 150px;
 }
 #box1 {
   background-color: #bb0a21;
@@ -130,6 +130,7 @@ h3 {color: black;}
   }
   .box {
     height: 150px;
+    padding: 0;
   }
 }
 /*tablet*/

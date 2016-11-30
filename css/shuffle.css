@@ -1,0 +1,177 @@
+/* For testing only  - Leroi Dejesa */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  /*border:1px dashed firebrick;*/
+}
+
+.columns, .fixed {
+  min-height: 100px;
+}
+/* End for testing */
+
+/*
+purple color: #9e788f
+khaki color: #d7ceb2
+dark color: #66635b
+*/
+
+body {
+  font-family: 'Luminari', serif;
+}
+
+h1, h2, h3, p {color: black;}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.box {
+  margin: 10px 1vw;
+  position: relative;
+}
+
+.box h1,h2,h3 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+#box1 {
+  margin-top: 110px;
+  height: 80px;
+  width: 60vw;
+  background-color: #66635b;
+
+}
+#box2 {
+  /*display: inline-block;*/
+  height: 190px;
+  background-color: #9e788f;
+}
+
+#boxh {
+  display: none;
+}
+
+#box3 img {
+  display: none;
+}
+
+#box4 img {
+  display: none;
+}
+
+#box5 img {
+  display: none;
+}
+
+#box3, #box4, #box5 {
+  height: 220px;
+  background-color: #d7ceb2;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #334;
+  width: 100%;
+  font: #eee;
+}
+
+.flexed {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexed li {
+  margin: 1em;
+  font-size: 1.3em;
+  text-align: center;
+  list-style-type: none;
+}
+
+
+/*Universal Selectors****************/
+
+
+
+/*Class Selectors********************/
+
+
+
+/*Id Selectors***********************/
+
+
+
+/*Media Queries**********************/
+
+@media screen and (max-width: 600px){
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  #box1 {
+    margin-top: 212px;
+  }
+  .flexed li {
+    margin: .5em;
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #box1 {
+    margin-bottom: 70px;
+  }
+
+  #box2 {
+    height: 100px;
+    margin-bottom: 50px;
+  }
+
+  #box3 img {
+    float: left;
+    display: block;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  #box4 img {
+    float: right;
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+
+  #box5 img {
+    float: left;
+    display: block;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  #boxh {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px){
+  #boxh {
+    display: block;
+    background-color: #d7ceb2;
+    height: 80px;
+    width: 20vw;
+    float: right;
+    margin-top: 112px;
+  }
+}
